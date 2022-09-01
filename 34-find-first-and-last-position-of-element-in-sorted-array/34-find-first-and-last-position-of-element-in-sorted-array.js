@@ -3,6 +3,11 @@
  * @param {number} target
  * @return {number[]}
  */
+
+// solved by using binary search to find first and last target
+// first is just binary search with specific case to continue
+// last and left can be initialized to the index of first
+
 var searchRange = function(nums, target) {
     let left = 0
     let right = nums.length - 1
@@ -25,7 +30,7 @@ var searchRange = function(nums, target) {
         return [-1,-1]
     }
     
-    left = 0
+    left = first
     right = nums.length - 1
     
     let last = first
