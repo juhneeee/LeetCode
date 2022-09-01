@@ -2,6 +2,9 @@
  * @param {number} n
  * @return {number}
  */
+
+// standard recursive solution. implement a memo to visit fewer branches.
+
 var fib = function(n, memo = {}) {
     if (n==0 || n== 1) {
         return n
