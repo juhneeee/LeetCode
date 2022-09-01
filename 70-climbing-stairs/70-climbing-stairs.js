@@ -4,6 +4,8 @@
  */
 
 // pattern propagates like Fib. Not sure why
+// update: it's because all  the paths from n-1 can reach n in one move (1)
+// and all the paths from n-2 can reach n in one move(2)
 
 var climbStairs = function(n, memo={}) {
     if (n <= 3){
