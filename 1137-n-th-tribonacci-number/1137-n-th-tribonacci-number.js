@@ -2,6 +2,8 @@
  * @param {number} n
  * @return {number}
  */
+
+// base cases. memo case. recursive call + add to memo
 var tribonacci = function(n, memo= {}) {
     if (n==0 || n==1){return n}
     if (n==2) return 1
