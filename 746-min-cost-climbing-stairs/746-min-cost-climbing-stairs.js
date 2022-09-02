@@ -23,3 +23,7 @@ var minCostClimbingStairs = function(cost) {
     return memo[top]
 
 };
+
+//make a memo of min cost to nth step. 
+// to get next one you can do n-1 step + cost of that step or
+// n-2 step + cost of that step.
