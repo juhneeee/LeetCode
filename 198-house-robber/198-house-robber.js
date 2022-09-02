@@ -11,7 +11,6 @@ var rob = function(nums) {
     
     if (len==1){return nums[0]}
 
-    
     while (n < len){
         if (n==0 || n==1){
             memo[n] = nums[n]
