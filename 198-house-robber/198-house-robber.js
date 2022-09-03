@@ -21,7 +21,6 @@ var rob = function(nums) {
         }
         n++
     }
-    console.log(memo)
     return Math.max(memo[len-1], memo[len-2])
     
 };
