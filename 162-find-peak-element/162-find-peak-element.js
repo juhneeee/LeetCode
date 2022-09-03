@@ -25,8 +25,11 @@ var findPeakElement = function(nums) {
 // [1,2,1,3,5,6,4]
 //  0 1 2 3 4 5 6 
 //  L     M      R
-//        L M    R
-//          L M  R       
+//          L M  R  
 
-// Within any given range there must exist a number larger than its neighbor
+// Within any given position, one of its neighbors will be larger.
+// unless that position is peak.
+
+// we can pick the interval LEFT or RIGHT of mid.
+// side doesnt matter as long as the adjacent number is larger than mid.
     
