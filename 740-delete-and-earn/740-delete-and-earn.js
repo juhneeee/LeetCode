@@ -25,3 +25,8 @@ var deleteAndEarn = function(nums) {
     }
     return Math.max(memo[max], memo[max-1] || 0)
 };
+
+
+// converted the problem into house robber.
+// changed array of nums into a hash of num:sum
+// then i iterated over this with houserobber solution
