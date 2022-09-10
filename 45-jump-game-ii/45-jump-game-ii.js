@@ -19,3 +19,8 @@ var jump = function(nums) {
     }
     console.log(memo)
 };
+
+// create a memo storing index: number of jumps to reach index
+// keeptrack of var maxD
+// Each time we can move futher than maxD; Also add new vals in between to indicate number of jumps
+// stop when we reach last index (nums length-1)
