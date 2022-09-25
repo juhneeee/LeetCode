@@ -11,6 +11,10 @@
  * @param {number} targetSum
  * @return {number[][]}
  */
+
+//Runtime: 275 ms, faster than 5.18% of JavaScript online submissions for Path Sum II.
+//Memory Usage: 61.1 MB, less than 5.03% of JavaScript online submissions for Path Sum II.
+
 var pathSum = function(root, targetSum) {
     // visit each node
     // when call on root (5)
@@ -26,7 +30,7 @@ var pathSum = function(root, targetSum) {
                 const sum = currPath.reduce((a,b)=> a+b)
                 if (sum == targetSum) {result.push(currPath)}
             } else {
-                // if no leaf
+                // if no leaf dfs
                 dfs(root.left,targetSum,[...currPath, root.val])
                 dfs(root.right,targetSum,[...currPath, root.val])
             }
@@ -35,3 +39,4 @@ var pathSum = function(root, targetSum) {
     dfs(root,targetSum,[])
     return result
 };
+
