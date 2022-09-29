@@ -2,10 +2,12 @@
  * @param {string} dominoes
  * @return {string}
  */
+
+
 var pushDominoes = function(dominoes) {
     ".L.R...LR..L.."
     ".L/./R...L/R..L/.."
-    let newStr = dominoes.replaceAll("L","L,").replaceAll("R",",R")
+    let newStr = dominoes.replace(/L/g,"L,").replace(/R/g,",R")
     let arr = newStr.split(",")
     console.log(arr)
     
