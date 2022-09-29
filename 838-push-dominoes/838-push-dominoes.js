@@ -3,13 +3,15 @@
  * @return {string}
  */
 
+// convert the string into an array of L, R, RL's, ..'s
+// use logic to create the strings.
 
 var pushDominoes = function(dominoes) {
     ".L.R...LR..L.."
     ".L/./R...L/R..L/.."
     let newStr = dominoes.replace(/L/g,"L,").replace(/R/g,",R")
     let arr = newStr.split(",")
-    console.log(arr)
+    // console.log(arr)
     
     let result = ""
     for(let i=0; i<arr.length;i++){
@@ -33,6 +35,6 @@ var pushDominoes = function(dominoes) {
             result += arr[i]
         }
     }
-    console.log(result)
+    // console.log(result)
     return result
 };
