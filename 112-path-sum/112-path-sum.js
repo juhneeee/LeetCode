@@ -11,8 +11,11 @@
  * @param {number} targetSum
  * @return {boolean}
  */
+
+// removed early return if negative target sum
+// 40% time 57% space
+
 var hasPathSum = function(root, targetSum) {
-    // if(targetSum < 0){return false}
     if(root == null){return false}
     
     targetSum-=root.val
