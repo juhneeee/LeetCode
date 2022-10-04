@@ -3,6 +3,10 @@
  * @param {number} target
  * @return {number[][]}
  */
+
+// Runtime: 134 ms, faster than 55.75% of JavaScript online submissions for Combination Sum.
+// Memory Usage: 45 MB, less than 88.15% of JavaScript online submissions for Combination Sum.
+
 var combinationSum = function(candidates, target) {
     const res = []
     
@@ -29,14 +33,3 @@ var combinationSum = function(candidates, target) {
     backtrack([], 0, 0)
     return res
 };
-// target 7
-// 2 2 2 // backtrack
-// 2 2 3 // push , backtrack
-// 2 3
-// 2 6
-// 2 7
-// 3 3
-// 3 6
-// 3 7
-// 6
-// 7
